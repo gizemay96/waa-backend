@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Works",
+  "info": {
+    "name": "works",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "ticketId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "branch": {
+      "type": "string"
+    },
+    "workCreated": {
+      "type": "date"
+    },
+    "currentEnv": {
+      "type": "integer",
+      "default": 1
+    },
+    "dev": {
+      "type": "json"
+    },
+    "fut": {
+      "type": "json"
+    },
+    "uat": {
+      "type": "json"
+    },
+    "preprod": {
+      "type": "json"
+    },
+    "prod": {
+      "type": "json"
+    },
+    "users_permissions_user": {
+      "via": "works",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "release": {
+      "via": "works",
+      "model": "releases"
+    },
+    "Documents": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

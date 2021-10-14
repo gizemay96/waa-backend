@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "releases",
+  "info": {
+    "name": "releases"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "releaseDate": {
+      "type": "datetime"
+    },
+    "Project": {
+      "type": "string"
+    },
+    "works": {
+      "via": "release",
+      "collection": "works"
+    }
+  }
+}
