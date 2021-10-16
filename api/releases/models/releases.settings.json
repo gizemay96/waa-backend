@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "releases",
   "info": {
-    "name": "releases"
+    "name": "releases",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,6 +21,11 @@
     "works": {
       "via": "release",
       "collection": "works"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "releases"
     }
   }
 }

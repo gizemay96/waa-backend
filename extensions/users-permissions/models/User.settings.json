@@ -63,6 +63,10 @@
       "via": "users_permissions_user",
       "private": true,
       "collection": "works"
+    },
+    "releases": {
+      "via": "users_permissions_user",
+      "collection": "releases"
     }
   }
 }
