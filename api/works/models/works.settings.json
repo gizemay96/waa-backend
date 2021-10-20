@@ -64,6 +64,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "developerName": {
+      "type": "string"
     }
   }
 }
