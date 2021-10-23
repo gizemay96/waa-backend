@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "releaseDate": {
-      "type": "datetime"
+      "type": "date"
     },
     "Project": {
       "type": "string"

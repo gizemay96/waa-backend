@@ -56,7 +56,7 @@
       "model": "releases"
     },
     "Documents": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "files"
