@@ -56,7 +56,7 @@
       "model": "releases"
     },
     "Documents": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "files"
@@ -67,6 +67,9 @@
     },
     "developerName": {
       "type": "string"
+    },
+    "notes": {
+      "type": "richtext"
     }
   }
 }
