@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "library_items",
+  "info": {
+    "name": "library-items",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "codes": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "library": {
+      "via": "library_items",
+      "model": "libraries"
+    }
+  }
+}

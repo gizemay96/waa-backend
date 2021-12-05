@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/libraries",
+      "handler": "libraries.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/libraries/count",
+      "handler": "libraries.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/libraries/:id",
+      "handler": "libraries.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/libraries",
+      "handler": "libraries.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/libraries/:id",
+      "handler": "libraries.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/libraries/:id",
+      "handler": "libraries.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -67,6 +67,10 @@
     "releases": {
       "via": "users_permissions_user",
       "collection": "releases"
+    },
+    "libraries": {
+      "via": "users_permissions_user",
+      "collection": "libraries"
     }
   }
 }

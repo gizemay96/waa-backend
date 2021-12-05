@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "libraries",
+  "info": {
+    "name": "libraries",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "library_items": {
+      "via": "library",
+      "collection": "library-items"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "libraries"
+    }
+  }
+}
